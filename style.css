@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(128, 172, 85);
+}
+form{
+    width: 25vw;
+    background-color: #ffffff;
+    margin-inline: auto;
+    margin-block: 200px;
+    padding: 0.63rem;
+    border-radius: 3px;
+    box-shadow: rgba(88, 88, 95, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+input{
+    display: block;
+    border: none;
+    width: 80%;
+    padding: 0.9rem;
+    font-size: 0.9rem;
+    background-color: rgb(241, 234, 234);
+    margin-inline:auto;
+    margin-top: 1.2rem;
+    border-bottom: 1px solid rgb(46, 43, 43);
+    position: relative;
+}
+input:hover{
+    box-shadow: inset 0px 0px 0px 30px rgb(195, 231, 160);
+    transition: all 0.6s ease;
+}
+input:nth-of-type(1){
+    margin-top: 1.5rem;
+}
+input::placeholder{
+    color: rgb(10, 10, 10);
+    font-size: 0.rem;
+}
+input:focus{
+    outline:none;
+    border-bottom: 1px solid rgb(133, 170, 96);
+    transition: all 0.5s ease;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(195, 231, 160) inset !important;
+    transition: none;
+}
+button{
+    padding: 0.7rem;
+    width: 80%;
+    margin-inline: auto;
+    display: block;
+    margin-top: 1.4rem;
+    position: relative;
+    z-index: 2;
+    outline: 1px solid black;
+    border: none;
+}
+button::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 0%;
+    background-color: rgb(111, 146, 76);
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+button:hover::before{
+    height: 100%;
+    transition: all 0.5s ease;
+}
+button:hover{
+    border: none;
+    outline: none;
+}
+button:hover > a{
+    color: #ffffff;
+    transition: all 0.7s ease;
+}
+button a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    height: 100%;
+    color: rgb(20, 18, 18);
+    z-index:1;
+}
+form .forgot{
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-block: 1.4rem 1.5rem;
+    color: rgb(133, 170, 96);
+}
